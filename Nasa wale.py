@@ -3,17 +3,18 @@ win = tkinter.Tk()
 inp = ''
 
 win.title('Caclculator... thingy i guess')
+
 tkinter.Grid.rowconfigure(win,0,weight=1)
-tkinter.Grid.columnconfigure(win,0,weight=1)
-tkinter.Grid.rowconfigure(win,1,weight=1)
-tkinter.Grid.columnconfigure(win,1,weight=1)
-tkinter.Grid.rowconfigure(win,2,weight=1)
-tkinter.Grid.columnconfigure(win,2,weight=1)
-tkinter.Grid.rowconfigure(win,3,weight=1)
-tkinter.Grid.columnconfigure(win,3,weight=1)
 tkinter.Grid.rowconfigure(win,4,weight=1)
-tkinter.Grid.columnconfigure(win, 4, weight=1)
-tkinter.Grid.rowconfigure(win,5,weight=1)
+tkinter.Grid.rowconfigure(win,1,weight=1)
+tkinter.Grid.rowconfigure(win,2,weight=1)
+tkinter.Grid.rowconfigure(win,3,weight=1)
+tkinter.Grid.columnconfigure(win,0,weight=1)
+tkinter.Grid.columnconfigure(win,1,weight=1)
+tkinter.Grid.columnconfigure(win,2,weight=1)
+tkinter.Grid.columnconfigure(win,3,weight=1)
+
+
 inputScreen = tkinter.Label(win, text = '')
 inputScreen.grid(column= 0, row = 0, columnspan= 3)
 outputScreen = tkinter.Label(win, text = '')
