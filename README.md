@@ -5,7 +5,7 @@ So, here we are, creating an extremely simple calculator, capable of performing 
 So far, I've written the GUI, and a simple script to convert the given string into a list of operands and operators  
 > (Also nasa waale bohot khatarnak hai)
 # Where to write the function to operate
-Add it in the Calc() function of Nasa wale.py  
+Add it in the Calc() function of bohot khatarnak hai.py  
 Also edit the function as necessary  
 and return the final result after operating  
 ...please I'm counting on you  
