@@ -49,23 +49,3 @@ b0 = tkinter.Button(win, text = '0',bg = "WHITE", relief = tkinter.FLAT, activeb
 bE = tkinter.Button(win, text = '=',bg = "WHITE", relief = tkinter.FLAT, activebackground = "YELLOW").grid(row = 5,column = 2,sticky = "NSEW")
 bS = tkinter.Button(win, text = '/',bg = "WHITE", relief = tkinter.FLAT, activebackground = "YELLOW",command=lambda:inpt("/")).grid(row = 5,column = 3,sticky = "NSEW")
 win.mainloop()
-
-
-'''
-1 = 1
-2 = 5
-3 = 9
-+ = /
-4 = 2
-5 = 6
-6 = 0
-- = *
-7 = 3
-8 =  7
-9 = C
-* = +
-C = 4
-0 = 8
-E = E
-/ = -
-'''
