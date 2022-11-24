@@ -1,4 +1,5 @@
 import tkinter
+import tkinter.messagebox
 import bohotKhatarnakHai
 win = tkinter.Tk()
 inp = ''
@@ -23,6 +24,10 @@ outputScreen = tkinter.Label(win, text = '', fg='#afafaf', justify = tkinter.RIG
 outputScreen.grid(row=1, columnspan= 4)
 def inpt(char):
     global inp
+    try:
+        inp = str(int(inp))
+    except:
+        inp = str(inp)
     inp += str(char)
     inputScreen['text'] = inp
     outputScreen['fg'] = '#afafaf'
@@ -37,10 +42,15 @@ def clear():
     inputScreen['text'] = inp
 
 def enter():
-    global inp
-    inp = bohotKhatarnakHai.Calc(inp)
-    inputScreen['text'] = inp
-    outputScreen['text'] = ''
+    try:
+        global inp
+        inp = bohotKhatarnakHai.Calc(inp)
+        inputScreen['text'] = inp
+        outputScreen['text'] = ''
+    except (ZeroDivisionError):
+        tkinter.messagebox.showerror('Lol', 'Can\'t really divide by zero now can you')
+    except (ValueError):
+        tkinter.messagebox.showerror('Whoops', 'Looks like you forgot a number there')
 
     
 b1 = tkinter.Button(win, text = '1',bg = 'WHITE', relief = tkinter.FLAT, activebackground = 'YELLOW',command=lambda:inpt('1')).grid(row = 2,column = 0,sticky = 'NSEW')
